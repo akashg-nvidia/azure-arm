@@ -4,7 +4,7 @@
   "parameters": {
     "policyAssignmentName": {
       "type": "string",
-      "defaultValue": "[guid(parameters('policyDefinitionID'), "storage-rg")]",
+      "defaultValue": "[guid(parameters('policyDefinitionID'), storage-rg)]",
       "metadata": {
         "description": "Specifies the name of the policy assignment, can be used defined or an idempotent name as the defaultValue provides."
       }
@@ -22,7 +22,7 @@
       "name": "[parameters('policyAssignmentName')]",
       "apiVersion": "2019-09-01",
       "properties": {
-        "scope": "[subscriptionResourceId('Microsoft.Resources/resourceGroups', "storage-rg")]",
+        "scope": "[subscriptionResourceId('Microsoft.Resources/resourceGroups', storage-rg)]",
         "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/0a914e76-4921-4c19-b460-a2d36003525a"
       }
     }

@@ -23,7 +23,7 @@
       "apiVersion": "2019-09-01",
       "properties": {
         "scope": "[subscriptionResourceId('Microsoft.Resources/resourceGroups', "storage-rg")]",
-        "policyDefinitionId": "[parameters('policyDefinitionID')]"
+        "policyDefinitionId": "[/providers/Microsoft.Authorization/policyDefinitions/0a914e76-4921-4c19-b460-a2d36003525a]"
       }
     }
   ]
